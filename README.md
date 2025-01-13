@@ -75,3 +75,190 @@ O desempenho dos indivíduos será avaliado com base nas seguintes métricas:
 - Adicionar mais variáveis aos genes (como inteligência, habilidades de negociação, etc.).
 - Estender a simulação para incluir conflitos, guerras, ou colaboração entre diferentes facções ou sociedades no jogo.
 
+---
+
+**Genoma da Civilização**
+
+Esta documentação descreve os elementos fundamentais que compõem o genoma da civilização simulada, especificando os atributos e comportamentos que definem suas características sociais, econômicas e culturais.
+
+---
+
+### 1. **Cultura e Valores**
+- **Descrição:** Define as crenças, ética e prioridades culturais.
+- **Atributos:**
+  - Pacifismo: **50%**
+  - Pragmatismo: **30%**
+  - Idealismo: **20%**
+
+---
+
+### 2. **Estrutura Social**
+- **Descrição:** Modelo de organização social.
+- **Classes:**
+  - Líderes: **10%**
+  - Trabalhadores: **60%**
+  - Guerreiros: **20%**
+  - Artistas: **10%**
+- **Cooperação vs. Individualismo:**
+  - Cooperação: **70%**
+  - Individualismo: **30%**
+
+---
+
+### 3. **Recursos e Economia**
+- **Descrição:** Forma como os recursos são coletados, distribuídos e utilizados.
+- **Foco:**
+  - Agricultura: **50%**
+  - Mineração: **30%**
+  - Artesanato: **20%**
+- **Gestão de Recursos:** Sustentável
+
+---
+
+### 4. **Tecnologia e Inovação**
+- **Descrição:** Ritmo de avanço tecnológico e áreas de interesse.
+- **Prioridade Tecnológica:**
+  - Defesa: **40%**
+  - Infraestrutura: **30%**
+  - Transporte: **30%**
+- **Velocidade de Inovação:** Moderada
+
+---
+
+### 5. **Genoma Genético**
+- **Parâmetros Biológicos e Comportamentais:**
+  - Taxa de Crescimento Populacional: **2% ao ano**
+  - Preferência de Biomas: **Planícies e Florestas**
+  - Adaptação Climática: **Alta**
+
+---
+
+### 6. **Política e Governança**
+- **Modelo Político:** Democracia participativa
+- **Expansão Territorial:**
+  - Padrão: **Moderado**
+  - Foco: **Comércio e diplomacia**
+
+---
+
+### 7. **Religião e Crenças**
+- **Descrição:** Sistema de crenças predominante.
+- **Sistema Religioso:** Politeísta
+- **Influência na Sociedade:** Moderada
+
+---
+
+### 8. **Defesa e Estratégia**
+- **Descrição:** Políticas e práticas de segurança.
+- **Estratégia de Defesa:**
+  - Fortificações: **60%**
+  - Diplomacia: **40%**
+
+---
+
+### 9. **Relações Externas**
+- **Descrição:** Postura em relação a outras civilizações.
+- **Política Externa:**
+  - Amigável: **70%**
+  - Neutra: **20%**
+  - Hostil: **10%**
+
+---
+
+### 10. **Inovação Cultural**
+- **Descrição:** Abordagem para mudanças culturais.
+- **Tendência:** Progressista
+
+---
+
+### 11. **Educação e Conhecimento**
+- **Descrição:** Importância atribuída à educação.
+- **Prioridade Educacional:** Alta
+- **Foco:**
+  - Ciências: **40%**
+  - Artes: **30%**
+  - Habilidades Práticas: **30%**
+
+---
+
+## Punições
+
+A civilização simulada adota um sistema de punições não violentas, baseadas em mecanismos sociais e econômicos, que incentivem comportamentos positivos sem recorrer à violência. 
+
+---
+
+### 1. **Redução de Recompensas ou Benefícios**
+- **Descrição:** Indivíduos que violarem as regras sociais (como desrespeitar a propriedade ou iniciar violência) terão suas recompensas reduzidas ou benefícios temporariamente suspensos.
+- **Exemplo:** 
+  - Menor chance de acesso a recursos valiosos.
+  - Restrições temporárias em zonas ricas em recursos.
+
+---
+
+### 2. **Isolamento Temporário**
+- **Descrição:** Indivíduos com comportamento disruptivo são temporariamente excluídos de interações sociais.
+- **Exemplo:** 
+  - O indivíduo é "banido" de áreas comuns ou de comércio por um período específico.
+  - Perda de acesso a contratos ou trocas voluntárias.
+
+---
+
+### 3. **Redução na Reputação**
+- **Descrição:** Um sistema de reputação pública mede a confiabilidade e cooperação dos indivíduos. Violações às regras reduzem a reputação, dificultando interações futuras.
+- **Exemplo:**
+  - Outros indivíduos evitam interagir com indivíduos de baixa reputação.
+  - Contratos tornam-se mais caros ou indisponíveis para eles.
+
+---
+
+### 4. **Serviço Comunitário**
+- **Descrição:** Indivíduos que violarem regras são obrigados a realizar ações que beneficiem a sociedade.
+- **Exemplo:**
+  - Recolher recursos para a comunidade.
+  - Construir ou reparar infraestruturas, como muros ou fazendas.
+
+---
+
+### 5. **Taxas ou Multas**
+- **Descrição:** Recursos do infrator são retirados como forma de compensação às vítimas ou à comunidade.
+- **Exemplo:**
+  - Perda de uma parte dos recursos coletados.
+  - Necessidade de "pagar" para compensar danos causados.
+
+---
+
+### 6. **Missões de Reabilitação**
+- **Descrição:** Indivíduos infratores recebem missões específicas que devem ser concluídas para "recuperar" sua posição na sociedade.
+- **Exemplo:**
+  - Realizar tarefas de cooperação, como ajudar outros indivíduos.
+  - Demonstrar pacifismo em interações futuras por um certo número de ciclos.
+
+---
+
+### 7. **Redistribuição de Recursos**
+- **Descrição:** Recursos adquiridos pelo infrator são redistribuídos para aqueles que sofreram com a infração.
+- **Exemplo:**
+  - Se um indivíduo roubar de outro, os recursos roubados (ou equivalente) são devolvidos ou redistribuídos.
+
+---
+
+### 8. **Penalidades de Evolução**
+- **Descrição:** Indivíduos com comportamento negativo enfrentam restrições na passagem de seus genes para a próxima geração.
+- **Exemplo:**
+  - Redução da probabilidade de transmissão dos genes problemáticos.
+  - Maior chance de mutações que incentivem comportamentos positivos.
+
+---
+
+Essas punições promovem a autorregulação da sociedade simulada, incentivam a cooperação e minimizam conflitos, mantendo a harmonia e evolução sustentável da civilização.
+
+---
+## Objetivo da Civilização
+
+1 - Crescer e se multiplicar
+2 - Ter uma vida sustentavel
+
+
+
+
+
