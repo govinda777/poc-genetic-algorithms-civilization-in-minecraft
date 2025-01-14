@@ -259,6 +259,12 @@ Essas punições promovem a autorregulação da sociedade simulada, incentivam a
 2 - Ter uma vida sustentavel
 
 
+---
+
+## Estrutura paleogenômica
+
+
+
 
 
 
