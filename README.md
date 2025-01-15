@@ -959,6 +959,99 @@ Cada categoria contém métricas específicas, visualizações gráficas e insig
 
 ---
 
+```mermaid
+flowchart LR
+    %% Definições gerais
+    classDef header fill:#e1e1e1,stroke:#999,stroke-width:1px,color:#333,stroke-dasharray: 0
+    classDef menu fill:#f9f9f9,stroke:#999,stroke-width:1px,color:#333,stroke-dasharray: 0
+    classDef card fill:#fff,stroke:#666,stroke-width:1px,color:#333,stroke-dasharray: 3 3
+    classDef footer fill:#e1e1e1,stroke:#999,stroke-width:1px,color:#333,stroke-dasharray: 0
+
+    %% Layout global: Cabeçalho + Menu + Conteúdo + Rodapé
+    
+    subgraph Layout[Protótipo do Dashboard]
+    direction TB
+    
+    %% 1) Cabeçalho (Barra Superior)
+    A[Barra Superior<br/>Título & Logo]:::header
+
+    %% Conexão para próxima parte (horizontal)
+    A --> M
+
+    %% 2) Menu Lateral
+    subgraph M[Menu Lateral / Filtros]
+    direction TB
+        M1[Seleção de Geração]
+        M2[Facção / População]
+        M3[Período / Intervalo de Tempo]
+        M4[Botoes Diversos<br/>Ex.: Exportar CSV]
+    end
+    class M1,M2,M3,M4 menu
+    
+    %% 3) Conteúdo Principal
+    subgraph Main[Área de Conteúdo Principal]
+    direction TB
+      %% Linha 1 de Cards
+      subgraph Row1[Linha 1]
+      direction LR
+        C1[<b>Métricas Globais</b><br/>
+          <ul><li>Fitness médio gráfico</li><li>Recursos disponíveis tabela/indicador</li><li>População viva vs. extinta gráfico</li></ul>]:::card
+
+        C2[<b>Evolução Genética</b><br/>
+          <ul><li>Gráfico Linhas: genes Agressividade, Cooperação...</li><li>Boxplot de Diversidade</li></ul>]:::card
+      end
+      
+      %% Linha 2 de Cards
+      subgraph Row2[Linha 2]
+      direction LR
+        C3[<b>Comportamento Social</b><br/>
+          <ul><li>Gráfico: Pacífico vs. Violento</li><li>Contratos bem-sucedidos</li><li>Mapa de Disputas Territoriais</li></ul>]:::card
+
+        C4[<b>Sustentabilidade & Recursos</b><br/>
+          <ul><li>Consumo médio de recursos</li><li>Impacto ambiental</li><li>Eficiência no uso de recursos</li></ul>]:::card
+      end
+
+      %% Linha 3 de Cards
+      subgraph Row3[Linha 3]
+      direction LR
+        C5[<b>Estrutura Populacional</b><br/>
+          <ul><li>Tipos de indivíduos cooperativos, agressivos...</li><li>Crescimento populacional</li></ul>]:::card
+
+        C6[<b>Governança & Regras</b><br/>
+          <ul><li>Índice de respeito à propriedade</li><li>Punições vs. reincidências</li><li>Tendência de punições gráfico</li></ul>]:::card
+      end
+      
+      %% Linha 4 de Cards
+      subgraph Row4[Linha 4]
+      direction LR
+        C7[<b>Comparação Entre Civilizações</b><br/>
+          <ul><li>Crescimento relativo</li><li>Nível de conflito/diplomacia</li></ul>]:::card
+
+        C8[<b>Indicadores de Longo Prazo</b><br/>
+          <ul><li>Esgotamento de recursos previsões</li><li>Estabilidade social ao longo do tempo</li><li>Inovação tecnológica</li></ul>]:::card
+      end
+
+      %% Linha 5 de Cards (Alertas, se quiser)
+      subgraph Row5[Linha 5]
+      direction LR
+        C9[<b>Alertas & Recomendações</b><br/>
+          <ul><li>Agressividade alta</li><li>Risco de consumo excessivo</li><li>Sugestões de ação imediata</li></ul>]:::card
+      end
+      
+    end
+    class C1,C2,C3,C4,C5,C6,C7,C8,C9 card
+    
+    %% 4) Rodapé
+    R[Rodapé<br/>Informações Legais & Créditos]:::footer
+    
+    end
+
+    %% Conexões para ilustrar navegação
+    M --> Main
+    Main --> R
+```
+
+
 ## **Categorias do Dashboard**
 
 ### 1. **Métricas de Desempenho Global**
