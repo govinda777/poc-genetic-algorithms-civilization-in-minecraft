@@ -264,6 +264,87 @@ Essas punições promovem a autorregulação da sociedade simulada, incentivam a
 ## Estrutura paleogenômica
 
 
+## DNA
+
+```mermaid
+graph TD
+    A[DNA do Indivíduo] --> B[Gene de Agressividade AG]
+    A --> C[Gene de Empatia EM]
+    A --> D[Gene de Cooperação CO]
+    A --> E[Gene de Territorialidade TE]
+    A --> F[Gene de Sustentabilidade SU]
+    A --> G[Gene de Comunicação CM]
+
+    %% Gene de Agressividade
+    B --> B1[Agressão: Alta/Moderada/Baixa]
+    B --> B2[Defesa de Recursos: Alta/Moderada/Baixa]
+    B --> B3[Conflitos Iniciados: Frequente/Raro/Nunca]
+    B1 --> B1a[Ações Hostis a Outros]
+    B1 --> B1b[Escala de Intensidade em Ataques]
+    B2 --> B2a[Defesa de Território Pessoal]
+    B2 --> B2b[Resposta a Ameaças Externas]
+    B3 --> B3a[Iniciativa em Ataques Estratégicos]
+    B3 --> B3b[Preferência por Retaliação]
+
+    %% Gene de Empatia
+    C --> C1[Empatia: Alta/Moderada/Baixa]
+    C --> C2[Ajuda Altruísta: Frequente/Ocasional/Rara]
+    C --> C3[Resolução de Conflitos: Pacífica/Neutra/Hostil]
+    C1 --> C1a[Compreensão de Emoções Alheias]
+    C1 --> C1b[Capacidade de Consolar Outros]
+    C2 --> C2a[Disponibilidade para Ajudar Necessitados]
+    C2 --> C2b[Recursos Doados Voluntariamente]
+    C3 --> C3a[Uso de Diplomacia]
+    C3 --> C3b[Intervenção em Disputas]
+
+    %% Gene de Cooperação
+    D --> D1[Cooperação: Alta/Moderada/Baixa]
+    D --> D2[Formação de Alianças: Frequente/Ocasional/Rara]
+    D --> D3[Contribuição em Projetos Comunitários: Alta/Moderada/Baixa]
+    D1 --> D1a[Parcerias em Tarefas Comuns]
+    D1 --> D1b[Colaboração em Recursos]
+    D2 --> D2a[Estabelecimento de Relações de Confiança]
+    D2 --> D2b[Trocas Beneficentes]
+    D3 --> D3a[Participação em Infraestruturas Comuns]
+    D3 --> D3b[Engajamento em Políticas Comunitárias]
+
+    %% Gene de Territorialidade
+    E --> E1[Proteção de Território: Alta/Moderada/Baixa]
+    E --> E2[Invasão de Território Alheio: Frequente/Rara/Nunca]
+    E --> E3[Defesa contra Invasões: Proativa/Moderada/Passiva]
+    E1 --> E1a[Monitoramento Constante de Fronteiras]
+    E1 --> E1b[Reforço de Limites]
+    E3 --> E3a[Construção de Barreiras]
+    E3 --> E3b[Mobilização de Recursos Defensivos]
+
+    %% Gene de Sustentabilidade
+    F --> F1[Uso de Recursos: Eficiente/Moderado/Desperdiçador]
+    F --> F2[Conservação de Recursos: Alta/Moderada/Baixa]
+    F --> F3[Impacto Ambiental: Baixo/Moderado/Alto]
+    F1 --> F1a[Taxa de Consumo por Ciclo]
+    F1 --> F1b[Planejamento de Consumo]
+    F3 --> F3a[Degradação do Habitat]
+    F3 --> F3b[Recuperação Ambiental]
+
+    %% Gene de Comunicação
+    G --> G1[Capacidade de Negociação: Alta/Moderada/Baixa]
+    G --> G2[Taxa de Sucesso em Contratos: Alta/Moderada/Baixa]
+    G --> G3[Persuasão em Grupos: Alta/Moderada/Baixa]
+    G1 --> G1a[Habilidade em Mediar Conflitos]
+    G1 --> G1b[Argumentação Convincente]
+    G3 --> G3a[Influência em Decisões Coletivas]
+    G3 --> G3b[Liderança Natural]
+
+    %% Estilo dos elementos principais
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B,C,D,E,F,G fill:#bbf,stroke:#333,stroke-width:1px
+
+    %% Estilo dos subatributos
+    style B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3 fill:#bfb,stroke:#333,stroke-width:1px
+    style B1a,B1b,B2a,B2b,B3a,B3b,C1a,C1b,C2a,C2b,C3a,C3b,D1a,D1b,D2a,D2b,D3a,D3b,E1a,E1b,E3a,E3b,F1a,F1b,F3a,F3b,G1a,G1b,G3a,G3b fill:#dfd,stroke:#333,stroke-width:1px
+```
+
+
 
 
 
