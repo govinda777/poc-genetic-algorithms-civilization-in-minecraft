@@ -1067,6 +1067,115 @@ Cada categoria contém métricas específicas, visualizações gráficas e insig
 
 ---
 
+```mermaid
+flowchart TB
+    %% Cabeçalho do Dashboard
+    A((Cabeçalho / Barra Superior)):::header
+    A --> B[Menu ou Filtros<br/>Ex.: Selecionar Geração,<br/>Facção, Período etc.]:::menu
+
+    %% Seções Principais (Cards)
+    subgraph Painéis Principais
+      direction TB
+      
+      %% Card 1 - Métricas de Desempenho Global
+      subgraph P1[Card - Métricas de Desempenho Global]
+      direction LR
+        P1A[(Gráfico: Fitness Médio por Geração)]
+        P1B[(Tabela: Recursos Disponíveis)]
+        P1C[(Gráfico: População Viva vs. Extinta)]
+        P1A --> P1C
+      end
+
+      %% Card 2 - Evolução Genética
+      subgraph P2[Card - Evolução Genética]
+      direction LR
+        P2A[Gráfico de Linhas:<br/>Médias dos Genes<br/>Agressividade, Cooperação...] 
+        P2B[(Boxplot:<br/>Desvio Padrão / Diversidade)]
+      end
+
+      %% Card 3 - Comportamento Social
+      subgraph P3[Card - Comportamento Social]
+      direction LR
+        P3A[(Pizza / Barras:<br/>Interações Pacíficas vs. Violentas)]
+        P3B[(Barras:<br/>Contratos Bem-Sucedidos)]
+        P3C[(Disputas Territoriais:<br/>Indicador / Mapa de Ocorrências)]
+        P3A --> P3B
+      end
+
+      %% Card 4 - Sustentabilidade e Recursos
+      subgraph P4[Card - Sustentabilidade e Recursos]
+      direction LR
+        P4A[(Gráfico: Consumo Médio de Recursos)]
+        P4B[(Linha / Radar:<br/>Impacto Ambiental)]
+        P4C[(Indicador de Eficiência<br/>no Uso de Recursos)]
+        P4A --> P4C
+      end
+
+      %% Card 5 - Estrutura da População
+      subgraph P5[Card - Estrutura da População]
+      direction LR
+        P5A[Barras:<br/>Tipos de Indivíduos<br/>Cooperativos, Agressivos etc.]
+        P5B[(Curva de Crescimento<br/>Populacional)]
+      end
+
+      %% Card 6 - Governança e Regras
+      subgraph P6[Card - Governança e Regras]
+      direction LR
+        P6A[(Índice de Respeito<br/>à Propriedade)]
+        P6B[(Tabela: Punições vs.<br/>Recidivas)]
+        P6C[(Gráfico de Linhas:<br/>Tendência de Punições)]
+      end
+
+      %% Card 7 - Comparação Entre Civilizações
+      subgraph P7[Card - Comparação Entre Civilizações]
+      direction LR
+        P7A[(Comparação de Taxa<br/>de Crescimento Relativo)]
+        P7B[(Nível de Conflito<br/>ou Diplomacia)]
+      end
+
+      %% Card 8 - Indicadores de Longo Prazo
+      subgraph P8[Card - Indicadores de Longo Prazo]
+      direction LR
+        P8A[(Projeção de Esgotamento<br/>de Recursos)]
+        P8B[(Gráfico de Estabilidade<br/>Social ao Longo do Tempo)]
+        P8C[(Taxa de Inovação<br/>Tecnológica)]
+      end
+
+      %% Card 9 - Alertas e Recomendações
+      subgraph P9[Card - Alertas e Recomendações]
+      direction LR
+        P9A[(Alerta: Agressividade Alta)]
+        P9B[(Alerta: Risco de Consumo<br/>Excessivo)]
+        P9C[(Sugestões de Ação<br/>Imediata)]
+      end
+    end
+
+    %% Rodapé
+    R((Rodapé / Informações Legais)):::footer
+
+    %% Conexões Principais
+    B --> P1
+    B --> P2
+    B --> P3
+    B --> P4
+    B --> P5
+    B --> P6
+    B --> P7
+    B --> P8
+    B --> P9
+    P9 --> R
+
+    %% Classes de Estilo
+    classDef header fill:#f0f0f0,stroke:#666,stroke-width:1px,color:#333
+    classDef menu fill:#fff,stroke:#666,stroke-width:1px,color:#333
+    classDef card fill:#fff,stroke:#999,stroke-width:1px,stroke-dasharray: 3 3,color:#333
+    classDef footer fill:#f0f0f0,stroke:#666,stroke-width:1px,color:#333
+
+    class A header
+    class B menu
+    class P1,P2,P3,P4,P5,P6,P7,P8,P9 card
+    class R footer
+```
 
 
 
