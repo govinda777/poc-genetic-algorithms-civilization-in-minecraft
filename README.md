@@ -345,6 +345,73 @@ graph TD
 ```
 
 
+> Mindmap
+
+```mermaid
+mindmap
+  root((DNA do Indivíduo))
+    AG(Gene de Agressividade - AG)
+      Agressao(Agressão: Alta/Moderada/Baixa)
+        AcoesHostis(Ações Hostis a Outros)
+        Intensidade(Escala de Intensidade em Ataques)
+      DefesaRecursos(Defesa de Recursos: Alta/Moderada/Baixa)
+        Territorio(Defesa de Território Pessoal)
+        RespostaAmeacas(Resposta a Ameaças Externas)
+      Conflitos(Conflitos Iniciados: Frequente/Raro/Nunca)
+        IniciativaAtaques(Iniciativa em Ataques Estratégicos)
+        PreferenciaRetaliacao(Preferência por Retaliação)
+
+    EM(Gene de Empatia - EM)
+      Empatia(Empatia: Alta/Moderada/Baixa)
+        ComprEmocoes(Compreensão de Emoções Alheias)
+        Consolar(Capacidade de Consolar Outros)
+      AjudaAltruista(Ajuda Altruísta: Frequente/Ocasional/Rara)
+        Disponibilidade(Disponibilidade para Ajudar Necessitados)
+        RecursosDoados(Recursos Doados Voluntariamente)
+      ResolucaoConflitos(Resolução de Conflitos: Pacífica/Neutra/Hostil)
+        Diplomacia(Uso de Diplomacia)
+        Intervencao(Intervenção em Disputas)
+
+    CO(Gene de Cooperação - CO)
+      Cooperacao(Cooperação: Alta/Moderada/Baixa)
+        Parcerias(Parcerias em Tarefas Comuns)
+        Colaboracao(Colaboração em Recursos)
+      FormacaoAliancas(Formação de Alianças: Frequente/Ocasional/Rara)
+        RelacoesConfianca(Estabelecimento de Relações de Confiança)
+        Trocas(Trocas Beneficentes)
+      ContribuicaoProjetos(Contribuição em Projetos Comunitários: Alta/Moderada/Baixa)
+        ParticipacaoInfra(Participação em Infraestruturas Comuns)
+        EngajamentoPoliticas(Engajamento em Políticas Comunitárias)
+
+    TE(Gene de Territorialidade - TE)
+      ProtecaoTerritorio(Proteção de Território: Alta/Moderada/Baixa)
+        Monitoramento(Monitoramento Constante de Fronteiras)
+        ReforcoLimites(Reforço de Limites)
+      InvasaoTerritorioAlheio(Invasão de Território Alheio: Frequente/Rara/Nunca)
+      DefesaInvasoes(Defesa contra Invasões: Proativa/Moderada/Passiva)
+        ConstrucaoBarreiras(Construção de Barreiras)
+        MobilizacaoDefensiva(Mobilização de Recursos Defensivos)
+
+    SU(Gene de Sustentabilidade - SU)
+      UsoRecursos(Uso de Recursos: Eficiente/Moderado/Desperdiçador)
+        TaxaConsumo(Taxa de Consumo por Ciclo)
+        PlanejamentoConsumo(Planejamento de Consumo)
+      ConservacaoRecursos(Conservação de Recursos: Alta/Moderada/Baixa)
+      ImpactoAmbiental(Impacto Ambiental: Baixo/Moderado/Alto)
+        DegradacaoHabitat(Degradação do Habitat)
+        RecuperacaoAmbiental(Recuperação Ambiental)
+
+    CM(Gene de Comunicação - CM)
+      Negociacao(Capacidade de Negociação: Alta/Moderada/Baixa)
+        MediarConflitos(Habilidade em Mediar Conflitos)
+        Argumentacao(Argumentação Convincente)
+      SucessoContratos(Taxa de Sucesso em Contratos: Alta/Moderada/Baixa)
+      Persuasao(Persuasão em Grupos: Alta/Moderada/Baixa)
+        Influencia(Influência em Decisões Coletivas)
+        Lideranca(Liderança Natural)
+```
+
+
 
 
 
