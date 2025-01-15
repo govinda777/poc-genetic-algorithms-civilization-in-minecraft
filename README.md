@@ -947,11 +947,126 @@ plt.show()
    - Ter diferentes populações competindo por recursos.
    - Avaliar a paz entre elas através de tratados e trocas comerciais.
 
+Este guia mostra como estruturar um experimento de evolução artificial que promova características de sustentabilidade e não-violência dentro de um ambiente *tipo* Minecraft. A mesma lógica pode ser adaptada para integrar dados reais do jogo, permitindo visualizar como diferentes estratégias genéticas podem evoluir em direções mais pacíficas ou mais agressivas, dependendo das recompensas e penalidades definidas na função de *fitness*.
+
 ---
 
-### Conclusão
+## Monitoração
 
-Este guia mostra como estruturar um experimento de evolução artificial que promova características de sustentabilidade e não-violência dentro de um ambiente *tipo* Minecraft. A mesma lógica pode ser adaptada para integrar dados reais do jogo, permitindo visualizar como diferentes estratégias genéticas podem evoluir em direções mais pacíficas ou mais agressivas, dependendo das recompensas e penalidades definidas na função de *fitness*.
+O dashboard abaixo possui os indicadores da civilização simulada. Organizamos em categorias principais que refletem os aspectos-chave da evolução. 
+
+Cada categoria contém métricas específicas, visualizações gráficas e insights relacionados ao comportamento dos indivíduos e da sociedade como um todo.
+
+---
+
+## **Categorias do Dashboard**
+
+### 1. **Métricas de Desempenho Global**
+   **Objetivo**: Monitorar o progresso geral da civilização ao longo das gerações.
+   - **Métricas**:
+     - *Fitness* médio por geração (indicador agregado de sucesso).
+     - Média de recursos disponíveis por geração.
+     - Proporção de indivíduos vivos versus extintos por geração.
+   - **Gráficos**:
+     - Linha do tempo de *fitness* médio por geração.
+     - Barras mostrando a evolução de recursos.
+
+---
+
+### 2. **Evolução Genética**
+   **Objetivo**: Avaliar como os valores dos genes mudam ao longo do tempo.
+   - **Métricas**:
+     - Médias dos genes (*Agressividade, Empatia, Cooperação*, etc.) por geração.
+     - Desvios padrão para medir a diversidade genética.
+   - **Gráficos**:
+     - Gráficos de linha para cada gene, mostrando a evolução de seus valores médios.
+     - Boxplots para diversidade genética em diferentes gerações.
+
+---
+
+### 3. **Comportamento Social**
+   **Objetivo**: Avaliar as interações entre os indivíduos.
+   - **Métricas**:
+     - Frequência de interações pacíficas versus violentas.
+     - Taxa de contratos voluntários bem-sucedidos.
+     - Proporção de disputas territoriais.
+   - **Gráficos**:
+     - Gráficos de pizza ou barras comparando interações pacíficas e violentas.
+     - Linha do tempo da frequência de contratos realizados.
+
+---
+
+### 4. **Sustentabilidade e Recursos**
+   **Objetivo**: Medir como os recursos são utilizados e a sustentabilidade da sociedade.
+   - **Métricas**:
+     - Consumo médio de recursos por geração.
+     - Impacto ambiental médio por geração.
+     - Eficiência no uso de recursos.
+   - **Gráficos**:
+     - Gráfico de barras ou linhas do impacto ambiental por geração.
+     - Mapas de calor mostrando áreas de maior consumo de recursos.
+
+---
+
+### 5. **Estrutura da População**
+   **Objetivo**: Visualizar a composição e a dinâmica da população.
+   - **Métricas**:
+     - Proporção de indivíduos por tipo (cooperativos, agressivos, sustentáveis, etc.).
+     - Tamanho da população por geração.
+     - Taxa de crescimento populacional.
+   - **Gráficos**:
+     - Gráficos de barras para a composição da população por tipo.
+     - Linha do tempo do tamanho populacional.
+
+---
+
+### 6. **Análise de Governança e Regras**
+   **Objetivo**: Verificar o impacto das regras sociais na estabilidade da civilização.
+   - **Métricas**:
+     - Índice de respeito à propriedade privada.
+     - Frequência de aplicação de punições.
+     - Eficácia das punições (ex.: redução de reincidências).
+   - **Gráficos**:
+     - Gráficos de linhas mostrando o respeito às regras sociais.
+     - Histogramas de punições aplicadas versus reincidências.
+
+---
+
+### 7. **Comparação Entre Civilizações (se aplicável)**
+   **Objetivo**: Comparar métricas de diferentes populações ou facções.
+   - **Métricas**:
+     - Taxa de crescimento relativo.
+     - Nível de conflito entre civilizações.
+     - Trocas e interações diplomáticas.
+   - **Gráficos**:
+     - Gráficos de radar para comparar diferentes civilizações.
+     - Linhas paralelas para comparar o desempenho em métricas-chave.
+
+---
+
+### 8. **Indicadores de Longo Prazo**
+   **Objetivo**: Avaliar a estabilidade e sustentabilidade da civilização no longo prazo.
+   - **Métricas**:
+     - Previsão de esgotamento de recursos.
+     - Estabilidade social (indicador calculado pela taxa de conflitos e colaborações).
+     - Taxa de inovação tecnológica.
+   - **Gráficos**:
+     - Projeções (curvas de tendência) do consumo de recursos.
+     - Gráficos de dispersão mostrando a correlação entre inovação e estabilidade.
+
+---
+
+### 9. **Alertas e Recomendações**
+   **Objetivo**: Fornecer insights acionáveis com base nos dados do dashboard.
+   - **Exemplo de Alertas**:
+     - "Agressividade alta em 30% da população - risco de conflitos crescentes."
+     - "Consumo de recursos excedendo limites sustentáveis - previsão de esgotamento em X gerações."
+   - **Gráficos ou Destaques**:
+     - Indicadores visuais (verde, amarelo, vermelho) para áreas críticas.
+     - Painéis de texto destacando recomendações.
+
+---
+
 
 
 
