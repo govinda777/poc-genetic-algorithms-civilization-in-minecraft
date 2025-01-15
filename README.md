@@ -417,6 +417,47 @@ mindmap
 
 A criação de um gene envolve alguns passos fundamentais, desde sua definição inicial até sua integração no ambiente de simulação. Vamos estruturar de maneira didática:
 
+```mermaid
+flowchart LR
+    %% População Inicial
+    A([População Inicial]) --> B[Indivíduos com Genes]
+
+    %% Indivíduos e Genes
+    subgraph I[Indivíduo]
+        direction TB
+        B1[Gene de Agressividade<br/>AG]
+        B2[Gene de Empatia<br/>EM]
+        B3[Gene de Cooperação<br/>CO]
+        B4[Gene de Territorialidade<br/>TE]
+        B5[Gene de Sustentabilidade<br/>SU]
+        B6[Gene de Comunicação<br/>CM]
+    end
+
+    B --> I
+
+    %% Interação no Ambiente
+    I --> C(Interação<br/>no Ambiente<br/>Minecraft)
+    C --> D(Avaliação de Fitness<br/>Violência, Contratos,<br/>Recursos, etc.)
+
+    %% Seleção Natural
+    D --> E[Seleção Natural<br/>Indivíduos com<br/>melhor Fitness]
+    E --> F[Crossover<br/>Combinação de Genes]
+    F --> G[Mutação<br/>Pequenas Variações]
+    G --> H(Nova Geração<br/>de Indivíduos)
+
+    %% Loop
+    H --> C
+    style A fill:#ffe,stroke:#000,stroke-width:1px
+    style B fill:#ffe,stroke:#000,stroke-width:1px
+    style I fill:#ebf8ff,stroke:#999,stroke-width:1px,stroke-dasharray: 5 5
+    style C fill:#fef9e7,stroke:#999,stroke-width:1px
+    style D fill:#fef9e7,stroke:#999,stroke-width:1px
+    style E fill:#fff4f4,stroke:#999,stroke-width:1px
+    style F fill:#fff4f4,stroke:#999,stroke-width:1px
+    style G fill:#fff4f4,stroke:#999,stroke-width:1px
+    style H fill:#fff4f4,stroke:#999,stroke-width:1px
+```
+
 ---
 
 ### **1. Estrutura Básica de um Gene**
@@ -562,6 +603,8 @@ Esse processo ocorre por várias gerações até que a sociedade atinja estabili
 
 Se precisar de ajuda com a implementação prática, posso fornecer exemplos específicos em Python ou outro ambiente.
 
+
+---
 
 
 
